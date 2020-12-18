@@ -5,8 +5,8 @@ const HeaderContainer = styled.header`
   width: 100vw;
   position: fixed;
   background-color: white;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  z-index:1000;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 
   .container {
     max-width: 1024px;
@@ -22,15 +22,47 @@ const HeaderContainer = styled.header`
       height: 75px;
       animation: zoomIn 400ms linear;
     }
+    .wrapper {
+      position:relative;
 
-    button {
-      background-color: #ff304e;
-      color: white;
-      font-size: 10pt;
-      border: none;
-      border-radius: 1.5rem;
-      outline: none;
-      padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+      button {
+        line-height: 36px;
+        font-size: 10pt;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 0 1rem 0 1rem;
+        border: solid 2px #ff304e;
+        background-color:white;
+        outline: none;
+        transition: all 0.35s;
+      }
+
+      button span {
+        position: relative;
+        z-index: 2;
+      }
+
+      button:after {
+        position: absolute;
+        z-index: 0;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff304e;
+        transition: all 0.35s;
+      }
+
+      button:hover {
+        color: #fff;
+      }
+
+      button:hover:after {
+        width: 100%;
+      }
     }
 
     .title {
@@ -51,8 +83,13 @@ const Header = () => {
       <HeaderContainer>
         <div className="container">
           <img src={Logo} alt="Logo" />
-          {/* <div className="title">Parva</div> */}
-          <button>LogIn/SignUp</button>
+          <div className="buttonContainer">
+            <div className="wrapper">
+              <button>
+                <span>LogIn/SignUp</span>
+              </button>
+            </div>
+          </div>
         </div>
       </HeaderContainer>
       <Spacer></Spacer>

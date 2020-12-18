@@ -29,11 +29,12 @@ const members = {
       image: Prajakta,
     },
     {
-      name: "Manali Sapate",
+      name: "Rohan Nerlekar",
       info:
-        "Manali is an IISc-trained scientist with an alternate career in space technology.",
-      image: Manali,
+        "Rohan Nerlekar is an experienced founder with a demonstrated history of working in the consumer electronics industry. Skilled in Brand Management, Project Management, and Digital Marketing.",
+      image: Rohan,
     },
+
     {
       name: "Suvrat Joshi",
       info:
@@ -47,10 +48,10 @@ const members = {
       image: Thirunarayan,
     },
     {
-      name: "Rohan Nerlekar",
+      name: "Manali Sapate",
       info:
-        "Rohan Nerlekar is an experienced founder with a demonstrated history of working in the consumer electronics industry. Skilled in Brand Management, Project Management, and Digital Marketing.",
-      image: Rohan,
+        "Manali is an IISc-trained scientist with an alternate career in space technology.",
+      image: Manali,
     },
   ],
 

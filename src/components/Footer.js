@@ -69,6 +69,11 @@ const FooterContainer = styled.footer`
       }
     }
   }
+
+  hr {
+    border-width: 0.25px;
+  }
+
   .copyrights {
     display: flex;
     flex-direction: row;
