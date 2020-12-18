@@ -5,7 +5,7 @@ import Prajakta from "../assets/team/PrajaktaHebbar.jpg";
 import Pushkar from "../assets/team/Pushkar.jpeg";
 import Renjil from "../assets/team/RenjilT.png";
 import Rohan from "../assets/team/RohanNerlekar.jpeg";
-import Suvrat from "../assets/team/SuvratJoshi.jpeg";
+import Suvrat from "../assets/team/SuvratJoshi.jpg";
 import Thirunarayan from "../assets/team/ThirunarayanSimha.jpg";
 
 const members = {
