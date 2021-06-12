@@ -2,10 +2,10 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import members from "../lib/team";
-import { IoMdMail } from "react-icons/io";
-import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+// import { IoMdMail } from "react-icons/io";
+// import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import Flip from "react-reveal/Flip";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 const Title = styled.section`
   color: #001255;
@@ -83,13 +83,13 @@ const Card = styled.article`
       margin-left: 0.75rem;
 
       .name,
-      .info {
+      .details {
         text-align: left !important;
       }
 
-      .socials {
+      /* .socials {
         margin-left: -0.25rem;
-      }
+      } */
     }
 
     .name {
@@ -100,7 +100,7 @@ const Card = styled.article`
       margin-top: 0.75rem;
     }
 
-    .info {
+    .details {
       color: #001255;
       font-weight: 400;
       font-size: 10pt;
@@ -112,7 +112,7 @@ const Card = styled.article`
       flex: 1;
     }
 
-    .socials {
+    /* .socials {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -135,7 +135,7 @@ const Card = styled.article`
       .mail:hover {
         color: #f7c80f;
       }
-    }
+    } */
   }
 `;
 
@@ -144,9 +144,9 @@ const TeamScreen = () => {
     <>
       <Header />
       <main>
-        <Slide top>
-          <Title>Our Team</Title>
-        </Slide>
+        {/* <Slide top> */}
+        <Title>Our Team</Title>
+        {/* </Slide> */}
         <GridContainer>
           {members.team.map((item) => {
             return (
@@ -157,9 +157,9 @@ const TeamScreen = () => {
                   </div>
                   <div className="details">
                     <div className="name">{item.name}</div>
-                    <div className="info">{item.info}</div>
+                    <div className="details">{item.details}</div>
                     <div className="spacer"></div>
-                    <div className="socials">
+                    {/* <div className="socials">
                       <span>
                         <AiFillLinkedin className="linkedin" size={26} />
                       </span>
@@ -169,16 +169,16 @@ const TeamScreen = () => {
                       <span>
                         <IoMdMail className="mail" size={26} />
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </Card>
               </Flip>
             );
           })}
         </GridContainer>
-        <Slide top>
-          <Title>Our Advisors</Title>
-        </Slide>
+        {/* <Slide top> */}
+        <Title>Our Advisors</Title>
+        {/* </Slide> */}
 
         <GridContainer>
           {members.advisors.map((item) => {
@@ -190,15 +190,15 @@ const TeamScreen = () => {
                   </div>
                   <div className="details">
                     <div className="name">{item.name}</div>
-                    <div className="info">{item.info}</div>
+                    <div className="details">{item.details}</div>
                     <div className="spacer"></div>
-                    <div className="socials">
+                    {/* <div className="socials">
                       <AiFillLinkedin className="linkedin" size={26} />
 
                       <AiOutlineTwitter className="twitter" size={26} />
 
                       <IoMdMail className="mail" size={26} />
-                    </div>
+                    </div> */}
                   </div>
                 </Card>
               </Flip>
